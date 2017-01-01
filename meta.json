@@ -9,7 +9,7 @@
       "type": "string",
       "required": true,
       "label": "Project description",
-      "default": "A Vue.js project"
+      "default": "A Vue.js project With Vue-router & Vuex"
     },
     "author": {
       "type": "string",
