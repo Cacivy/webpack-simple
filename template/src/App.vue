@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+		<header>
+			<Logo></Logo>
+		</header>
     <transition name="fade">
       <keep-alive>
         <router-view></router-view>
@@ -9,8 +12,12 @@
 </template>
 
 <script>
+import Logo from './component/Logo'
 export default {
-  name: 'app'
+  name: 'app',
+	components: {
+		Logo
+	}
 }
 </script>
 

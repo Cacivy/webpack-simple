@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 import index from '../page/index'
+import home from '../page/home'
 
 export default new VueRouter({
     mode: 'history',
@@ -11,6 +12,10 @@ export default new VueRouter({
         {
             path: '/',
             component: index
+        },
+				{
+            path: '/home',
+            component: home
         },
         {
             path: '*',
