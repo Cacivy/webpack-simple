@@ -4,7 +4,7 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-    loading: false,
+  loading: false
 }
 
 const getters = {
@@ -12,21 +12,21 @@ const getters = {
 }
 
 const mutations = {
-    LOADING(state) {
-        this.loading = !this.loading
-    }
+  LOADING (state) {
+    this.loading = !this.loading
+  }
 }
 
 const actions = {
-    loading({commit}) {
-        commit('LOADING')
-    }
+  loading ({commit}) {
+    commit('LOADING')
+  }
 }
 
 export default new Vuex.Store({
-	state,
-    getters,
-	mutations,
-	actions,
-	strict: true
+  state,
+  getters,
+  mutations,
+  actions,
+  strict: true
 });

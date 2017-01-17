@@ -7,19 +7,19 @@ import index from '../page/index'
 import home from '../page/home'
 
 export default new VueRouter({
-    mode: 'history',
-    routes: [
-        {
-            path: '/',
-            component: index
-        },
-				{
-            path: '/home',
-            component: home
-        },
-        {
-            path: '*',
-            redirect: '/'
-        }
-    ]
+  mode: 'history',
+  routes: [
+    {
+      path: '/',
+      component: index
+    },
+    {
+      path: '/home',
+      component: home
+    },
+    {
+      path: '*',
+      redirect: '/'
+    }
+  ]
 })
