@@ -61,7 +61,10 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
-  ]
+  ],
+  performance: {
+    hints: false
+  }
 }
 
 if (process.env.NODE_ENV === 'production') {
